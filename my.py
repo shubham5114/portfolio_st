@@ -1,8 +1,26 @@
 import streamlit as st
+
+# ----------------------------------------------------------------wide page---------------------
+st.set_page_config(layout="wide")
 from streamlit_option_menu import option_menu
 import time
 from streamlit_lottie import st_lottie
 import requests
+
+# ----------------------------------------------dark mode-----------------------------------------------
+# Set background color to dark gray
+st.markdown(
+    """
+    <style>
+    .css-17eq0hr {
+        color: white;
+        background-color: #1E1E1E;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+# --------------------------------------------------sidebar----------------------------------------
 
 
 # ----------------------------------------------------option menu-----------------------------------------
@@ -14,8 +32,11 @@ selected = option_menu(
     orientation="horizontal",
     styles={
         "container": {"padding": "10"},
+        # "selected_option": {"color": "#CE4BC2"},  # Set color for the selected option
+        "nav-link-selected": {"background-color": "#CE4BC2"},
     },
 )
+
 
 # ----------------------------------------------------Home------------------------------------------------
 

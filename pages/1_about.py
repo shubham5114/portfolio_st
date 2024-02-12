@@ -158,9 +158,9 @@ with st.expander("HighSchool Detail..."):
         st.markdown('<p class="big-font">School</p>', unsafe_allow_html=True)
         st.markdown('<p class="big-font">Stream</p>', unsafe_allow_html=True)
         st.markdown(
-            '<p class="big-font">Percentage (12ᵗʰ) </p>', unsafe_allow_html=True
+            '<p class="big-font">Percentage (12th) </p>', unsafe_allow_html=True
         )
-        st.markdown('<p class="big-font"> CGPA(10ᵗʰ) </p>', unsafe_allow_html=True)
+        st.markdown('<p class="big-font"> CGPA(10th) </p>', unsafe_allow_html=True)
     with c2:
         st.markdown(
             """
